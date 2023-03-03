@@ -9,7 +9,7 @@ from core.models import TeammateRequest, GymRequest, CoachRequest
 
 
 def home_view(request):
-    return render(request, 'core/about.html')
+    return render(request, 'core/index.html')
 
 
 def about_view(request):
