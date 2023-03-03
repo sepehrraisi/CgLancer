@@ -1,4 +1,4 @@
-# teamu.ir
+# CgLancer.ir
 ### setup
 ```
 python -m venv venv
