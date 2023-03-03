@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tech5 | تکفایو</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HTML5 website template">
+    <meta name="keywords" content="global, template, html, sass, jquery">
+    <meta name="author" content="Bucky Maler">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+        <img src="{% static 'assets/img/logo-site-white.png' %}" alt="Global">
+        <p>Global</p>
+    </a>
+    <p class="device-notification--message">لطفا برای تجربه مفید تر از صفحه نمایش بزرگ تر استفاده کنید یا گوشی خود را به
+        حالت عمودی در بیاورید.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+    <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+            <div class="l-wrapper">
+                <header class="header">
+                    <a class="header--logo" href="#0">
+                        <img src="{% static 'assets/img/logo-site-white.png' %}" alt="Tech5" width="288" height="128">
+                    </a>
+                    <div class="header--nav-toggle">
+                        <span></span>
+                    </div>
+                </header>
+                <nav class="l-side-nav">
+                    <ul class="side-nav">
+                        <li class="is-active"><span>درباره ما</span></li>
+                        {#            <li><span>سخنرانان</span></li>#}
+                        {#                        <li><span>تیم ما</span></li>#}
+                        {#                        <li><span>سایت ها</span></li>#}
+                    </ul>
+                </nav>
+                <ul class="l-main-content main-content">
+                    <li class="l-section section section--is-active">
+                        <div class="about-page">
+                            <div class="about-page--banner">
+                                <h2>درباره تکفایو</h2>
+                                <p style="font-size: 100%;">تکفایو(Tech5)، یک رویداد تکرار شونده در حوزه
+                                    های مرتبط با انقلاب چهارم
+                                    صنعتی(Industry4.0) یا نسل پنجم فنآوری(Technology 5) می باشد. انقلاب چهارم صنعتی ،به
+                                    تغییرات شگرف و سریع در فنآوری، صنایع ،مدلهای کسب و کار و حتی زندگی روزمره بشر اطلاق
+                                    میشود که از ابتدای قرن ۲۱ آغاز و با سرعتی شگفت انگیز به پیشروی خود ادامه میدهد! این
+                                    انقلاب بر بستر چندین تکنولوژی مدرن بنا شده که شامل هوش مصنوعی،اینترنت
+                                    اشیا،بلاکچین،متاورس،پرینت سه بعدی و ... می باشد. رسالت ما در تکفایو، ترویج فرهنگ خلق
+                                    ثروت بر بستر این تکنولوژی هاست. مخاطبین ما از یک سو جوانان و نوجوانان نخبه بعنوان
+                                    نسل آینده فعالان اقتصادی کشور و از سوی دیگر فعالان اقتصادی،کارآفرینان و صاحبان
+                                    سرمایه است. هر رویداد تکفایو معمولا روی یک موضوع یا تکنولوژی خاص نسل پنج تمرکز دارد.
+                                    گهگاه در کنار رویداد،نمایشگاه تخصصی اکوسیستم آن موضوع نیز برگزار میگردد. شما
+                                    میتوانید رویداد های پیشین و آتی تکفایو را از اینجا دنبال نمایید. همچنین ما یک باشگاه
+                                    ویژه نخبگان نسل پنج کشور را نیز راه اندازی کرده ایم که میتوانید از اینجا درباره آن
+                                    بدانید.
+                                </p>
+                                <a href="{% url 'core:home' %}">بازگشت به صفحه اصلی
+
+                                    <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                         style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                                </a>
+                                <img src="{% static 'assets/img/about-visual.png' %}" alt="About Us">
+                            </div>
+                        </div>
+                    </li>
+                    {#                    <li class="l-section section">#}
+                    {#                        <div class="work1">#}
+                    {#                            <h2>لوگوها</h2>#}
+                    {#                            <div class="work1--lockup">#}
+                    {#                                <ul class="slider1">#}
+                    {#                                    <li class="slider--item1 slider--item-left1 " style="pointer-events: auto;">#}
+                    {#                                        <a href="https://aran5.ir/">#}
+                    {#                                            <div class="slider--item-image1 front1">#}
+                    {#                                                <img src="{% static 'assets/img/aran.png' %}" alt="Hamid Tavakoli"#}
+                    {#                                                >#}
+                    {#                                            </div>#}
+                    {#                                            <p class="slider--item-title1">آران 5</p>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                    <li class="slider--item1 slider--item-center1 ">#}
+                    {#                                        <a href="https://upfactor.ir/">#}
+                    {#                                            <div class="slider--item-image1 ">#}
+                    {#                                                <img src="{% static 'assets/img/upfactor.png' %}" alt="upfactor logo">#}
+                    {#                                            </div>#}
+                    {#                                            <div>#}
+                    {#                                                <p class="slider--item-title1">آپفکتور</p>#}
+                    {##}
+                    {#                                            </div>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                    <li class="slider--item1 slider--item-right1 " style="pointer-events: auto">#}
+                    {#                                        <a href="https://sarajob.ir/">#}
+                    {#                                            <div class="slider--item-image1 ">#}
+                    {#                                                <img src="{% static 'assets/img/sarajob.png' %}"#}
+                    {#                                                     alt="sarajob logo">#}
+                    {#                                            </div>#}
+                    {#                                            <p class="slider--item-title1">سراجاب</p>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                </ul>#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </li>#}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="outer-nav">
+        <li class="is-active">درباره ما</li>
+        {#        <li>سایت ها</li>#}
+        {#    <li>سخنرانان</li>#}
+        {#        <li>تماس با ما</li>#}
+        {#        <li>ثبت نام</li>#}
+    </ul>
+</div>
+
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>#}
+<script src="{% static 'assets/js/vendor/jquery-2.2.4.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="{% static 'assets/js/vendor/jquery-2.2.4.min.js' %}"><\/script>')</script>
+<script src="{% static 'assets/js/functions-min.js' %}"></script>
+</body>
+</html>
