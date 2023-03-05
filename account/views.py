@@ -14,7 +14,7 @@ from core.models import TeammateRequest, GymRequest, CoachRequest
 
 class RegisterView(SuccessMessageMixin, AuthenticatedUserMixin, CreateView):
     model = User
-    template_name = 'account/register.html'
+    template_name = 'account/new-register.html'
     form_class = RegisterForm
     success_url = reverse_lazy('account:login')
     success_message = 'حساب شما با موفقیت ساخته شد، لطفا وارد حساب خود شوید.'
